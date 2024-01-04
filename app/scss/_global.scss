@@ -1,6 +1,8 @@
 body {
     height: 100vh;
     @extend %gilroy-700;
+    font-size: 1.125rem;
+    background-color: $bg;
 }
 a {
     text-decoration: none;
@@ -14,20 +16,13 @@ button {
 }
 .wrapper {
     min-height: 100%;
-    // overflow: clip;
     display: flex;
     flex-direction: column;
-    font-size: 80px;
 }
 .main {
     flex: 1 1 auto;
-    // padding-top: 100px;
+    padding-top: 93px;
     z-index: 0;
-}
-.container {
-    // width: 1470px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 /* Сховати елемент не видаляючи з DOM */
 .visually-hidden {
@@ -37,4 +32,14 @@ button {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+.container {
+    max-width: 1490px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-top {
+    max-width: 1920px;
+    padding: 0 80px;
+    margin: 0 auto;
 }
