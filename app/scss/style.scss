@@ -18,10 +18,6 @@
     height: auto;
 }
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 1000;
     margin: 0 auto;
     padding: 0 80px;
@@ -88,27 +84,7 @@
     max-width: 950px;
     margin: 0 auto;
     padding-top: 200px;
-}
-.slicer__inner {
-}
-.slider__item {
-}
-.title-decor {
-    padding-left: 104px;
-    position: relative;
-    color: $accent;
-    @extend %gilroy-800;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 10px;
-        width: 72px;
-        height: 2px;
-        background-color: $accent;
-    }
+    margin-bottom: 843px;
 }
 .slider__title {
     padding: 32px 0;
@@ -193,6 +169,177 @@
                 content: "03";
             }
         }
+    }
+}
+// follow us
+.follow-us {
+    position: fixed;
+    top: 270px;
+}
+.follow-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px 0;
+}
+.follow-us__text {
+    writing-mode: vertical-rl;
+    width: 22px;
+    height: 77px;
+    color: #fff;
+}
+.follow-us__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 0;
+}
+.follow-us__icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+// info
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 114px;
+    padding-left: 150px;
+    position: relative;
+    margin-bottom: 200px;
+}
+.info-firs {
+    position: relative;
+    &::before {
+        content: "01";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        font-size: 15rem;
+        line-height: 15rem;
+        z-index: -100;
+        opacity: 0.1;
+        @extend %gilroy-700;
+        color: #fff;
+        top: -120px;
+        left: -152px;
+    }
+}
+.info-second {
+    position: relative;
+    &::before {
+        content: "02";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        font-size: 15rem;
+        line-height: 15rem;
+        z-index: -100;
+        opacity: 0.1;
+        @extend %gilroy-700;
+        color: #fff;
+        top: -120px;
+        left: -152px;
+    }
+}
+.info-third {
+    position: relative;
+    &::before {
+        content: "03";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        font-size: 15rem;
+        line-height: 15rem;
+        z-index: -100;
+        opacity: 0.1;
+        @extend %gilroy-700;
+        color: #fff;
+        top: -120px;
+        left: -152px;
+    }
+}
+.info__content {
+    max-width: 632px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 27px 0;
+    position: relative;
+}
+.info__content-right {
+    padding-left: 0;
+}
+.info__link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 16px;
+    transition: all 0.3s;
+    &:hover {
+        .info__link-svg {
+            fill: $hover;
+        }
+    }
+}
+.info__link-svg {
+    width: 24px;
+    height: 16px;
+    fill: $accent;
+    transition: all 0.3s;
+}
+.info__img {
+    width: 556px;
+    height: 720px;
+}
+// footer
+.footer__wrapper {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info {
+}
+.footer-info__logo {
+    display: block;
+    margin-bottom: 24px;
+}
+.footer-info__text {
+    max-width: 303px;
+    margin-bottom: 122px;
+}
+.footer-info__copyright {
+    color: #878e93;
+    @extend %gilroy-500;
+    line-height: 2rem; /* 177.778% */
+}
+.footer-nav {
+    display: flex;
+    gap: 0 212px;
+}
+.footer-nav__title {
+    color: $accent;
+    font-size: 1.5rem;
+    line-height: 2rem; /* 133.333% */
+    margin-bottom: 24px;
+}
+.footer-nav__item {
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.footer-nav__link {
+    color: #fff;
+    line-height: 2rem; /* 177.778% */
+    @extend %gilroy-500;
+    transition: all 0.3s;
+    &:hover {
+        color: $hover;
     }
 }
 @import "media";
