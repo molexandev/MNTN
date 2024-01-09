@@ -7,16 +7,16 @@
         <title>MNTN</title>
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
-    <body>
+    <body id="body" class="body">
         <div class="wrapper">
             <div class="background-top">
                 <img
                     src="../images/background-top.avif"
-                    alt=""
+                    alt="background image"
                     class="background-top__img"
                 />
             </div>
-            <header class="header">
+            <header class="header wow animate__fadeIn" data-wow-duration="1.5s">
                 <div class="header__wrapper">
                     <a class="logo" href="#">
                         <svg class="logo__svg">
@@ -30,7 +30,9 @@
                     <nav class="menu" id="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="#equipment">Equipment</a>
+                                <a class="menu__link" href="#equipment"
+                                    >Equipment</a
+                                >
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#about">About us</a>
@@ -54,6 +56,43 @@
                     </div>
                 </div>
             </header>
+            <div
+                class="follow-us wow animate__fadeIn"
+                data-wow-duration="1.5"
+                data-wow-delay=".5s"
+            >
+                <div class="follow-us__wrapper">
+                    <p class="follow-us__text">Follow us</p>
+                    <div class="follow-us__icons">
+                        <a
+                            class="follow-us__icon-link"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                        >
+                            <svg class="account__svg">
+                                <use
+                                    xlink:href="images/sprite.svg#instagram-icon"
+                                    width="24"
+                                    height="24"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            class="follow-us__icon-link"
+                            href="https://twitter.com/"
+                            target="_blank"
+                        >
+                            <svg class="account__svg">
+                                <use
+                                    xlink:href="images/sprite.svg#twitter-icon"
+                                    width="24"
+                                    height="24"
+                                ></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </divs>
     </bodys>
-</htmsl>
+</htmls>
