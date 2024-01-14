@@ -178,6 +178,7 @@
    position: fixed;
    top: 270px;
    left: 80px;
+   z-index: 1000;
    &__wrapper {
       display: flex;
       flex-direction: column;
@@ -272,9 +273,14 @@
       fill: $accent;
       transition: all 0.3s;
    }
+   &__img-box {
+      min-width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
    &__img {
-      width: 556px;
-      height: 720px;
+      object-fit: contain;
    }
 }
 // footer
@@ -302,6 +308,7 @@
 }
 .footer-nav {
    display: flex;
+   justify-content: space-between;
    gap: 0 212px;
    &__title {
       color: $accent;
