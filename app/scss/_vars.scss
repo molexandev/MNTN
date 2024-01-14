@@ -1,32 +1,8 @@
-// $default: #1B3764;
-// $hover: #4d7ecc;
-// $accent: #FFCA42;
-// $text-color: #B4C7E7;
-// $textwhite: #F6F8FC;
-// $textgray: #969AA0;
+$default: #fff;
+$hover: #ff9900;
+$accent: #fbd784;
+$bg: #0b1d26;
 
-// %btn {
-//    @extend %cardo-400;
-//    background-color: $accent;
-//    font-size: 19px;
-//    line-height: 28px;
-//    letter-spacing: 0.57px;
-//    text-transform: capitalize;
-//    color: $default;
-//    border: none;
-//    cursor: pointer;
-//    transition: all .2s;
-
-//    &:hover {
-//       color: $accent;
-//       background-color: $hover;
-//    }
-// }
-
-%gilroy-800 {
-    font-family: "Gilroy-ExtraBold", sans-serif;
-    font-weight: 800;
-}
 %gilroy-500 {
     font-family: "Gilroy-Medium", sans-serif;
     font-weight: 500;
@@ -35,11 +11,15 @@
     font-family: "Gilroy-Bold", sans-serif;
     font-weight: 700;
 }
-%open-sans-600 {
-    font-family: "OpenSans-SemiBold", sans-serif;
+%gilroy-800 {
+    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-weight: 800;
+}
+%Garamond-SemiBold-600 {
+    font-family: "EBGaramond-SemiBold", sans-serif;
     font-weight: 600;
 }
-%open-sans-700 {
-    font-family: "OpenSans-Bold", sans-serif;
+%Garamond-Bold-700 {
+    font-family: "EBGaramond-Bold", sans-serif;
     font-weight: 700;
 }
